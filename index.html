@@ -4,67 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projects — uabdulkhaliq</title>
-  <style>
-    :root{
-      --bg:#f6f7fb;
-      --card:#ffffff;
-      --muted:#6b7280;
-      --accent:#0ea5a4;
-      --accent-600:#08908d;
-      --border:rgba(2,6,23,0.06);
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg);color:#0f172a}
-
-    /* layout */
-    .container{min-height:100vh;display:grid;grid-template-columns:280px 1fr;gap:28px;padding:28px}
-
-    /* Full-height left sidebar */
-    .sidebar{background:linear-gradient(180deg,rgba(255,255,255,0.85),rgba(255,255,255,0.8));padding:28px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.06);height:calc(100vh - 56px);position:sticky;top:28px;overflow:auto;border:1px solid rgba(2,6,23,0.04)}
-    .brand{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
-    .brand .title{font-size:18px;font-weight:700}
-    .brand .subtitle{font-size:13px;color:var(--muted)}
-
-    .nav-list{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:8px}
-    .nav-list a{color:#0f172a;text-decoration:none;font-weight:600;padding:10px 12px;border-radius:8px;display:block}
-    .nav-list a:hover{background:rgba(14,165,164,0.06);color:var(--accent-600)}
-
-    /* Right content */
-    .main{padding:22px;border-radius:12px;background:transparent}
-    header h2{margin:0 0 12px;font-size:18px}
-
-    .list-card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 3px 10px var(--border);border:1px solid rgba(2,6,23,0.03)}
-    .project-list{width:100%;border-collapse:collapse;font-size:15px}
-    .project-list thead th{ text-align:left;padding:12px 14px;color:var(--muted);font-weight:600;font-size:13px;border-bottom:1px solid rgba(2,6,23,0.05)}
-    .project-list tbody tr{border-bottom:1px solid rgba(2,6,23,0.03)}
-    .project-list tbody td{padding:14px}
-    .project-name{font-weight:700;color:#0f172a}
-    .project-desc{color:var(--muted);font-size:14px}
-    .project-url a{color:var(--accent);text-decoration:none;font-weight:600}
-    .project-url a:hover{text-decoration:underline;color:var(--accent-600)}
-
-    /* Small external icon */
-    .ext-icon{width:12px;height:12px;display:inline-block;margin-left:6px;vertical-align:middle}
-
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-
-    @media (max-width:960px){
-      .container{grid-template-columns:220px 1fr;padding:18px}
-      .sidebar{height:calc(100vh - 36px);top:18px}
-    }
-
-    @media (max-width:720px){
-      .container{grid-template-columns:1fr;padding:14px}
-      .sidebar{position:relative;height:auto;border-radius:10px}
-      .main{padding-top:8px}
-      .project-list thead{display:none}
-      .project-list tbody td{display:block;padding:12px}
-      .project-list tbody tr{margin-bottom:10px;border-bottom:1px solid rgba(2,6,23,0.04)}
-      .project-row{display:flex;flex-direction:column;gap:6px}
-    }
-
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
@@ -79,14 +19,14 @@
           <li><a href="#viciny">Viciny</a></li>
           <li><a href="#woocify">Woocify</a></li>
           <li><a href="#techbola">Techbola</a></li>
-          <li><a href="#pstify">PSTify</a></li>
+          <li><a href="#pstify">PSify</a></li>
           <li><a href="#clock">Clock</a></li>
           <li><a href="#rank">Rank</a></li>
         </ul>
       </nav>
 
       <footer>
-        <p style="margin:12px 0 0;color:var(--muted);font-size:13px">Links open in a new tab. Want icons or longer descriptions added? I can update this page.</p>
+        <p style="margin:12px 0 0;color:var(--muted);font-size:13px">Links open in a new tab.</p>
       </footer>
     </aside>
 
@@ -107,38 +47,38 @@
           <tbody>
             <tr id="viciny">
               <td class="project-name">Viciny</td>
-              <td class="project-url"><a href="https://viciny.app" target="_blank" rel="noopener noreferrer">viciny.app <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="15 3 21 3 21 9"/><line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
-              <td class="project-desc">Social and community tools — visit the live site.</td>
+              <td class="project-url"><a href="https://viciny.app" target="_blank" rel="noopener noreferrer">viciny.app <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+              <td class="project-desc">Curated lists. Live radius tracking. No login needed. Discover verified local spots as you move through the world.</td>
             </tr>
 
             <tr id="woocify">
               <td class="project-name">Woocify</td>
-              <td class="project-url"><a href="https://woocify.com" target="_blank" rel="noopener noreferrer">woocify.com <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="15 3 21 3 21 9"/><line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
-              <td class="project-desc">E-commerce solutions and plugins.</td>
+              <td class="project-url"><a href="https://woocify.com" target="_blank" rel="noopener noreferrer">woocify.com <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+              <td class="project-desc">Personal scheduling for availability-based meetings, or appointment booking for services — with names you choose: sessions, events, meetings, or your own term.</td>
             </tr>
 
             <tr id="techbola">
               <td class="project-name">Techbola</td>
-              <td class="project-url"><a href="https://techbola.com" target="_blank" rel="noopener noreferrer">techbola.com <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="15 3 21 3 21 9"/><line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
-              <td class="project-desc">Tech news, articles, and editorial content.</td>
+              <td class="project-url"><a href="https://techbola.com" target="_blank" rel="noopener noreferrer">techbola.com <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+              <td class="project-desc">AI focused on How to guides and setup.</td>
             </tr>
 
             <tr id="pstify">
-              <td class="project-name">PSTify</td>
-              <td class="project-url"><a href="https://pstify.microdigits.ca" target="_blank" rel="noopener noreferrer">pstify.microdigits.ca <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="15 3 21 3 21 9"/><line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
-              <td class="project-desc">Personal / experimental project.</td>
+              <td class="project-name">PSify</td>
+              <td class="project-url"><a href="https://pstify.microdigits.ca" target="_blank" rel="noopener noreferrer">pstify.microdigits.ca <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+              <td class="project-desc">Explore your PST files within the browser.</td>
             </tr>
 
             <tr id="clock">
               <td class="project-name">Clock</td>
-              <td class="project-url"><a href="https://clock.microdigits.ca" target="_blank" rel="noopener noreferrer">clock.microdigits.ca <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="15 3 21 3 21 9"/><line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
-              <td class="project-desc">Clock and time-related utilities.</td>
+              <td class="project-url"><a href="https://clock.microdigits.ca" target="_blank" rel="noopener noreferrer">clock.microdigits.ca <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+              <td class="project-desc">A display clock with various themes.</td>
             </tr>
 
             <tr id="rank">
               <td class="project-name">Rank</td>
-              <td class="project-url"><a href="https://rank.microdigits.ca" target="_blank" rel="noopener noreferrer">rank.microdigits.ca <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="15 3 21 3 21 9"/><line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
-              <td class="project-desc">Ranking and analytics tools.</td>
+              <td class="project-url"><a href="https://rank.microdigits.ca" target="_blank" rel="noopener noreferrer">rank.microdigits.ca <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+              <td class="project-desc">Work in Progress. Matching entities based on various parameters that are derived from the research work.</td>
             </tr>
 
           </tbody>
@@ -147,5 +87,6 @@
 
     </main>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
