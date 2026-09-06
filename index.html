@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — uabdulkhaliq</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg);color:#111}
+    .container{min-height:100vh;display:grid;grid-template-columns:260px 1fr;gap:28px;padding:28px}
+    .sidebar{background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.5));padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);height:fit-content}
+    .sidebar h1{margin:0 0 8px;font-size:20px}
+    .sidebar p{margin:0 0 14px;color:var(--muted);font-size:13px}
+    .nav-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+    .nav-list a{color:var(--accent);text-decoration:none;font-weight:600}
+
+    .main{padding:20px;border-radius:12px;background:transparent}
+    header h2{margin:0 0 12px;font-size:18px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 3px 10px rgba(2,6,23,0.06);border:1px solid rgba(2,6,23,0.03)}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card a{color:#0f172a;text-decoration:none}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{margin-top:20px;color:var(--muted);font-size:13px}
+
+    @media (max-width:760px){
+      .container{grid-template-columns:1fr;padding:18px}
+      .sidebar{order:0}
+      .main{order:1;padding-top:8px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" aria-label="Sidebar">
+      <h1>My Projects</h1>
+      <p>A short list of projects I'm working on. Click a project to visit the site.</p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#viciny">viciny.app</a></li>
+          <li><a href="#woocify">woocify.com</a></li>
+          <li><a href="#techbola">techbola.com</a></li>
+          <li><a href="#pstify">pstify.micordigits.ca</a></li>
+          <li><a href="#clock">clock.microdigits.ca</a></li>
+          <li><a href="#rank">rank.microdigits.ca</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header>
+        <h2>Active Projects</h2>
+      </header>
+
+      <section class="projects">
+        <article class="card" id="viciny">
+          <h3><a href="https://viciny.app" target="_blank" rel="noopener noreferrer">viciny.app</a></h3>
+          <p>Social / community tools — visit the live site.</p>
+        </article>
+
+        <article class="card" id="woocify">
+          <h3><a href="https://woocify.com" target="_blank" rel="noopener noreferrer">woocify.com</a></h3>
+          <p>E-commerce solutions and plugins.</p>
+        </article>
+
+        <article class="card" id="techbola">
+          <h3><a href="https://techbola.com" target="_blank" rel="noopener noreferrer">techbola.com</a></h3>
+          <p>Tech news and articles.</p>
+        </article>
+
+        <article class="card" id="pstify">
+          <h3><a href="https://pstify.micordigits.ca" target="_blank" rel="noopener noreferrer">pstify.micordigits.ca</a></h3>
+          <p>Personal / experimental project (pstify).</p>
+        </article>
+
+        <article class="card" id="clock">
+          <h3><a href="https://clock.microdigits.ca" target="_blank" rel="noopener noreferrer">clock.microdigits.ca</a></h3>
+          <p>Clock and time-related utilities.</p>
+        </article>
+
+        <article class="card" id="rank">
+          <h3><a href="https://rank.microdigits.ca" target="_blank" rel="noopener noreferrer">rank.microdigits.ca</a></h3>
+          <p>Ranking / analytics tools.</p>
+        </article>
+      </section>
+
+      <footer>
+        Links open in a new tab. Want descriptions or icons added? I can update this page.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
